@@ -5,3 +5,7 @@ license 'all_rights'
 description 'Installs/Configures jenkins_slave_ok'
 long_description 'Installs/Configures jenkins_slave_ok'
 version '0.1.0'
+
+depends 'apt', '~> 2.9.2'
+depends 'git', '~> 5.0.0'
+depends 'java_se', '~> 8.102.1'
