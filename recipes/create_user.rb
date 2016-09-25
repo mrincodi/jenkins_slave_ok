@@ -4,6 +4,9 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+# Create group for user.
+group node['groupname']
+
 # Create user.
 user node['username'] do
   # This 'supports' one is needed to create the folder.

@@ -22,7 +22,7 @@ require 'spec_helper'
 describe 'jenkins_slave_ok::default' do
   let(:chef_run) do
     runner = ChefSpec::ServerRunner.new(platform: 'ubuntu', version: '16.04')
-    #ChefSpec::ServerRunner.new
+    # ChefSpec::ServerRunner.new
     runner.converge(described_recipe)
   end
 
@@ -42,7 +42,7 @@ describe 'jenkins_slave_ok::default' do
     expect(chef_run).to create_link('/usr/share/java/junit.jar').with(to: '/usr/share/java/junit-4.12.jar')
   end
 
-    it 'creates a user with the default action' do
-      expect(chef_run).to create_user('worker')
-    end
+  it 'creates a user with the default action' do
+    expect(chef_run).to create_user('worker')
+  end
 end

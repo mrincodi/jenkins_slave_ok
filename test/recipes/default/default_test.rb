@@ -3,11 +3,11 @@ describe package 'git' do
 end
 
 describe command('java -version') do
- its('stderr') { should match (/1.8/) }
+  its('stderr') { should match(/1.8/) }
 end
 
 describe command('javac -version') do
- its('stderr') { should match (/1.8/) }
+  its('stderr') { should match(/1.8/) }
 end
 
 describe file '/usr/share/java/junit-4.12.jar' do
